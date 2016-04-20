@@ -7,6 +7,8 @@ Barcode generator
 |:------:|:-----:|:---------:|:---------:|
 |🆗|🆗|🆗|🆗|
 
+![](https://cloud.githubusercontent.com/assets/1725068/14666616/9294b6a0-0715-11e6-9323-6b1934e37b38.png)
+
 About
 ---
 Barcode generator based on [zint](https://github.com/zint).
