@@ -1503,68 +1503,48 @@ void toSVG(zint_symbol *symbol, int dpi, int rotate_angle, bool no_background, C
 		}
 		sprintf(_cx, "%.2f", (35.76 + xoffset) * scaler);
 		sprintf(_cy, "%.2f", (35.60 + yoffset) * scaler);
-		sprintf(_r, "%.2f", 10.85 * scaler);
-		svg += "<circle cx=\"";
-		svg += _cx;
-		svg += "\" cy=\"";
-		svg += _cy;
-		svg += "\" r=\"";
-		svg += _r;
-		svg += "\" fill=\"#000000\" />\n";
-		sprintf(_r, "%.2f", 8.97 * scaler);
-		svg += "<circle cx=\"";
-		svg += _cx;
-		svg += "\" cy=\"";
-		svg += _cy;
-		svg += "\" r=\"";
-		svg += _r;
-		if(no_background){
-			svg += "\" fill=\"none\" />\n";
-		}else{
-			svg += "\" fill=\"#FFFFFF\" />\n";
+//		sprintf(_r, "%.2f", 10.85 * scaler);
+		sprintf(_r, "%.2f", 9.91 * scaler);
+		if(!no_background){
+			//bg
+			svg += "<circle cx=\"";
+			svg += _cx;
+			svg += "\" cy=\"";
+			svg += _cy;
+			svg += "\" r=\"";
+			svg += _r;
+			svg += "\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFFFF\" />\n";
 		}
-		sprintf(_r, "%.2f", 7.10 * scaler);
+		
 		svg += "<circle cx=\"";
 		svg += _cx;
 		svg += "\" cy=\"";
 		svg += _cy;
 		svg += "\" r=\"";
 		svg += _r;
-		svg += "\" fill=\"#000000\" />\n";
-		sprintf(_r, "%.2f", 5.22 * scaler);
+		svg += "\" stroke-width=\"1.88\" stroke=\"#000000\" fill=\"none\" />\n";
+		
+		sprintf(_r, "%.2f", 6.15 * scaler);
+		
 		svg += "<circle cx=\"";
 		svg += _cx;
 		svg += "\" cy=\"";
 		svg += _cy;
 		svg += "\" r=\"";
 		svg += _r;
-		if(no_background)
-		{
-			svg += "\" fill=\"none\" />\n";
-		}else{
-			svg += "\" fill=\"#FFFFFF\" />\n";
-		}
-		sprintf(_r, "%.2f", 3.31 * scaler);
+		svg += "\" stroke-width=\"1.88\" stroke=\"#000000\" fill=\"none\" />\n";
+		
+		sprintf(_r, "%.2f", 2.39 * scaler);
+		
 		svg += "<circle cx=\"";
 		svg += _cx;
 		svg += "\" cy=\"";
 		svg += _cy;
 		svg += "\" r=\"";
 		svg += _r;
-		svg += "\" fill=\"#000000\" />\n";
-		sprintf(_r, "%.2f", 1.43 * scaler);
-		svg += "<circle cx=\"";
-		svg += _cx;
-		svg += "\" cy=\"";
-		svg += _cy;
-		svg += "\" r=\"";
-		svg += _r;
-		if(no_background)
-		{
-			svg += "\" fill=\"none\" />\n";
-		}else{
-			svg += "\" fill=\"#FFFFFF\" />\n";
-		}
+		svg += "\" stroke-width=\"1.88\" stroke=\"#000000\" fill=\"none\" />\n";
+		
+		svg += "<g stroke-width=\"0.18\" stroke=\"#000000\">\n";
 		for(r = 0; r < symbol->rows; r++) {
 			for(i = 0; i < symbol->width; i++) {
 				if(zint::module_is_set(symbol, r, i)) {
@@ -1627,6 +1607,7 @@ void toSVG(zint_symbol *symbol, int dpi, int rotate_angle, bool no_background, C
 				}
 			}
 		}
+		svg += "</g>\n";
 	}
 	
 	if(symbol->symbology != BARCODE_MAXICODE) {
