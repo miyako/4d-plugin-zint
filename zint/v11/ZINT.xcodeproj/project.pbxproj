@@ -50,9 +50,9 @@
 		D14D83FD1A0E5EBF00AEAB07 /* ARRAY_REAL.h in Headers */ = {isa = PBXBuildFile; fileRef = D14D83F11A0E5EBF00AEAB07 /* ARRAY_REAL.h */; };
 		D14D83FE1A0E5EBF00AEAB07 /* ARRAY_TEXT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D14D83F21A0E5EBF00AEAB07 /* ARRAY_TEXT.cpp */; };
 		D14D83FF1A0E5EBF00AEAB07 /* ARRAY_TEXT.h in Headers */ = {isa = PBXBuildFile; fileRef = D14D83F31A0E5EBF00AEAB07 /* ARRAY_TEXT.h */; };
+		D1618A391F39DFCA002EFE36 /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1618A371F39DFCA002EFE36 /* libpng16.16.dylib */; };
+		D1618A3A1F39DFCA002EFE36 /* libzint.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1618A381F39DFCA002EFE36 /* libzint.dylib */; };
 		D176169C1B4FD0BC000FEC42 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D176169B1B4FD0BC000FEC42 /* Info.plist */; };
-		D1B2E0C31CC698170076F9EF /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B2E0C11CC698170076F9EF /* libpng16.16.dylib */; };
-		D1B2E0C41CC698170076F9EF /* libzint.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1B2E0C21CC698170076F9EF /* libzint.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,9 +100,9 @@
 		D14D83F11A0E5EBF00AEAB07 /* ARRAY_REAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARRAY_REAL.h; path = "../../4D Plugin API/Classes/ARRAY_REAL.h"; sourceTree = "<group>"; };
 		D14D83F21A0E5EBF00AEAB07 /* ARRAY_TEXT.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ARRAY_TEXT.cpp; path = "../../4D Plugin API/Classes/ARRAY_TEXT.cpp"; sourceTree = "<group>"; };
 		D14D83F31A0E5EBF00AEAB07 /* ARRAY_TEXT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARRAY_TEXT.h; path = "../../4D Plugin API/Classes/ARRAY_TEXT.h"; sourceTree = "<group>"; };
+		D1618A371F39DFCA002EFE36 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = ZINT.4dbase/Plugins/ZINT.bundle/Contents/MacOS/libpng16.16.dylib; sourceTree = "<group>"; };
+		D1618A381F39DFCA002EFE36 /* libzint.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libzint.dylib; path = ZINT.4dbase/Plugins/ZINT.bundle/Contents/MacOS/libzint.dylib; sourceTree = "<group>"; };
 		D176169B1B4FD0BC000FEC42 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
-		D1B2E0C11CC698170076F9EF /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = lib/libpng16.16.dylib; sourceTree = "<group>"; };
-		D1B2E0C21CC698170076F9EF /* libzint.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libzint.dylib; path = lib/libzint.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +110,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1B2E0C31CC698170076F9EF /* libpng16.16.dylib in Frameworks */,
-				D1B2E0C41CC698170076F9EF /* libzint.dylib in Frameworks */,
+				D1618A391F39DFCA002EFE36 /* libpng16.16.dylib in Frameworks */,
 				8D01CCCE0486CAD60068D4B7 /* Carbon.framework in Frameworks */,
 				D130064F12F02D9700702C0E /* Cocoa.framework in Frameworks */,
+				D1618A3A1F39DFCA002EFE36 /* libzint.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,6 @@
 		089C166AFE841209C02AAC07 /* ZINT */ = {
 			isa = PBXGroup;
 			children = (
-				D1B2E0C11CC698170076F9EF /* libpng16.16.dylib */,
-				D1B2E0C21CC698170076F9EF /* libzint.dylib */,
 				08FB77ADFE841716C02AAC07 /* Source */,
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
@@ -136,6 +134,8 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				D1618A371F39DFCA002EFE36 /* libpng16.16.dylib */,
+				D1618A381F39DFCA002EFE36 /* libzint.dylib */,
 				08EA7FFBFE8413EDC02AAC07 /* Carbon.framework */,
 				D130064E12F02D9700702C0E /* Cocoa.framework */,
 			);
@@ -387,6 +387,7 @@
 		42D60B400A9DDBC8002ABB42 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: keisuke miyako (Y69CWUC25B)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
@@ -406,7 +407,10 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ../Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/ZINT.4dbase/Plugins/ZINT.bundle/Contents/MacOS",
+				);
 				LIBRARY_STYLE = Bundle;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -427,6 +431,7 @@
 		42D60B410A9DDBC8002ABB42 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: keisuke miyako (Y69CWUC25B)";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEPLOYMENT_LOCATION = NO;
@@ -443,7 +448,10 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ../Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/ZINT.4dbase/Plugins/ZINT.bundle/Contents/MacOS",
+				);
 				LIBRARY_STYLE = Bundle;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -464,6 +472,7 @@
 		42D60B420A9DDBC8002ABB42 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Developer ID Application: keisuke miyako (Y69CWUC25B)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -478,7 +487,10 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ../Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/lib";
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/lib",
+					"$(PROJECT_DIR)/ZINT.4dbase/Plugins/ZINT.bundle/Contents/MacOS",
+				);
 				LIBRARY_STYLE = Bundle;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -499,6 +511,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Developer ID Application: keisuke miyako (Y69CWUC25B)";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
@@ -514,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Developer ID Application: keisuke miyako (Y69CWUC25B)";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)";
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
@@ -529,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "Developer ID Application: keisuke miyako (Y69CWUC25B)";
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				GCC_VERSION = 4.0;

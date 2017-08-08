@@ -1338,13 +1338,13 @@ void toSVG(zint_symbol *symbol, int dpi, int rotate_angle, bool no_background, C
 	svg += "</desc>\n";
 	
 	svg += "<g shape-rendering=\"";
-	if(symbol->symbology != BARCODE_MAXICODE)
-	{
-		svg += "crispEdges";
-	}else
-	{
+//	if(symbol->symbology != BARCODE_MAXICODE)
+//	{
+//		svg += "crispEdges";
+//	}else
+//	{
 		svg += "auto";
-	}
+//	}
 	svg += "\" transform=\"translate(";
 	switch (rotate_angle)
 	{
