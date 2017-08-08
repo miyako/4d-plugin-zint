@@ -20,7 +20,7 @@ Barcode generator based on [zint](https://github.com/zint).
 * "transparent background" option for both PNG and SVG.
 * "rotate (90, 180, 270)" option for both PNG and SVG.
 * "DPI" option for both PNG and SVG.
-* optimised SVG (``cripsEdges`` shape rendering for bars, ``sans-serif`` font).
+* optimised SVG (~~``cripsEdges`` shape rendering for bars,~~ ``sans-serif`` font).
 
 Commands
 ---
