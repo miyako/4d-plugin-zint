@@ -293,8 +293,8 @@
       <TargetMachine>MachineX86</TargetMachine>
       <EntryPointSymbol>
       </EntryPointSymbol>
-      <AdditionalLibraryDirectories>lib\windows</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libz.lib;libpng.1.5.13.lib;libzint.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>lib\VC10\32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libz.lib;libpng.lib;libzint.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -317,8 +317,8 @@
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <AdditionalLibraryDirectories>lib\windows64</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libz.lib;libpng.1.5.13.lib;libzint.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>lib\VC10\64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libz.lib;libpng.lib;libzint.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
