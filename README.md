@@ -1,5 +1,7 @@
 # 4d-plugin-zint
-Barcode generator
+Barcode generator based on [zint](https://zint.github.io).
+
+* Exports SVG or PNG (compressed bitmap), as picture and text (XML source or base64 encoded data).
 
 ### Platform
 
@@ -11,15 +13,6 @@ Barcode generator
 
 <img src="https://cloud.githubusercontent.com/assets/1725068/18940649/21945000-8645-11e6-86ed-4a0f800e5a73.png" width="32" height="32" /> <img src="https://cloud.githubusercontent.com/assets/1725068/18940648/2192ddba-8645-11e6-864d-6d5692d55717.png" width="32" height="32" />
 
-
-![](https://cloud.githubusercontent.com/assets/1725068/14666616/9294b6a0-0715-11e6-9323-6b1934e37b38.png)
-
-About
----
-Barcode generator based on [zint](https://github.com/zint).
-
-* Exports SVG or PNG (compressed bitmap), as picture and text (XML source or base64 encoded data).
-
 **Extended for 4D**
 
 * "transparent background" option for both PNG and SVG.
@@ -27,14 +20,25 @@ Barcode generator based on [zint](https://github.com/zint).
 * "DPI" option for both PNG and SVG.
 * optimised SVG (~~``cripsEdges`` shape rendering for bars,~~ ``sans-serif`` font).
 
-Commands
 ---
-```c
-ZINT
+
+## Syntax
+
+```
+barcode:=ZINT (in;format;type;keys;values;out)
 ```
 
-Examples
----
+Parameter|Type|Description
+------------|------------|----
+in|TEXT|
+format|LONGINT|See constants ``ZINT Export Type``
+type|LONGINT|See constants ``ZINT Barcode Type``
+keys|ARRAY LONGINT|See constants ``ZINT Option Name``
+values|ARRAY LONGINT|
+out|TEXT|
+
+## Examples
+
 ```
 ARRAY LONGINT($optionNames;0)
 ARRAY TEXT($optionValues;0)
@@ -72,3 +76,6 @@ SET TEXT TO PASTEBOARD($textData)
   //WRITE PICTURE FILE(System folder(Desktop)+"test.svg";$bar)
   //SET PICTURE TO PASTEBOARD($bar)
 ```
+
+![](https://cloud.githubusercontent.com/assets/1725068/14666616/9294b6a0-0715-11e6-9323-6b1934e37b38.png)
+
