@@ -52,8 +52,10 @@
 		D13116F41A03C7AF00DE1322 /* ARRAY_DATE.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D13116F21A03C7AF00DE1322 /* ARRAY_DATE.cpp */; };
 		D13116F51A03C7AF00DE1322 /* ARRAY_DATE.h in Headers */ = {isa = PBXBuildFile; fileRef = D13116F31A03C7AF00DE1322 /* ARRAY_DATE.h */; };
 		D134D4AC1A030BA0008D14EF /* manifest.json in CopyFiles */ = {isa = PBXBuildFile; fileRef = D134D4A91A030B06008D14EF /* manifest.json */; };
-		D1618A341F39DB35002EFE36 /* libzint.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1618A331F39DB35002EFE36 /* libzint.dylib */; };
-		D1618A361F39DBD4002EFE36 /* libpng16.16.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D1618A351F39DBD4002EFE36 /* libpng16.16.dylib */; };
+		D147F42D1F95D79300AB7E31 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D147F4291F95D79300AB7E31 /* libjpeg.a */; };
+		D147F42E1F95D79300AB7E31 /* libpng16.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D147F42A1F95D79300AB7E31 /* libpng16.a */; };
+		D147F42F1F95D79300AB7E31 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D147F42B1F95D79300AB7E31 /* libz.a */; };
+		D147F4301F95D79300AB7E31 /* libzint.2.4.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D147F42C1F95D79300AB7E31 /* libzint.2.4.2.a */; };
 		D175D9CD1A02E8DD0006B569 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D175D9CC1A02E8DD0006B569 /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,9 +120,11 @@
 		D13116F21A03C7AF00DE1322 /* ARRAY_DATE.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; name = ARRAY_DATE.cpp; path = Classes/ARRAY_DATE.cpp; sourceTree = "<group>"; };
 		D13116F31A03C7AF00DE1322 /* ARRAY_DATE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ARRAY_DATE.h; path = Classes/ARRAY_DATE.h; sourceTree = "<group>"; };
 		D134D4A91A030B06008D14EF /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		D147F4291F95D79300AB7E31 /* libjpeg.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libjpeg.a; path = a/libjpeg.a; sourceTree = "<group>"; };
+		D147F42A1F95D79300AB7E31 /* libpng16.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng16.a; path = a/libpng16.a; sourceTree = "<group>"; };
+		D147F42B1F95D79300AB7E31 /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = a/libz.a; sourceTree = "<group>"; };
+		D147F42C1F95D79300AB7E31 /* libzint.2.4.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libzint.2.4.2.a; path = a/libzint.2.4.2.a; sourceTree = "<group>"; };
 		D14D10DD1A03A8A5008B3411 /* constants.xlf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = constants.xlf; sourceTree = "<group>"; };
-		D1618A331F39DB35002EFE36 /* libzint.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libzint.dylib; path = ZINT.4dbase/Plugins/ZINT.bundle/Contents/MacOS/libzint.dylib; sourceTree = "<group>"; };
-		D1618A351F39DBD4002EFE36 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = ZINT.4dbase/Plugins/ZINT.bundle/Contents/MacOS/libpng16.16.dylib; sourceTree = "<group>"; };
 		D175D9CC1A02E8DD0006B569 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -129,9 +133,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1618A361F39DBD4002EFE36 /* libpng16.16.dylib in Frameworks */,
+				D147F42D1F95D79300AB7E31 /* libjpeg.a in Frameworks */,
+				D147F42E1F95D79300AB7E31 /* libpng16.a in Frameworks */,
+				D147F42F1F95D79300AB7E31 /* libz.a in Frameworks */,
+				D147F4301F95D79300AB7E31 /* libzint.2.4.2.a in Frameworks */,
 				D13116C71A03B5B600DE1322 /* AppKit.framework in Frameworks */,
-				D1618A341F39DB35002EFE36 /* libzint.dylib in Frameworks */,
 				D175D9CD1A02E8DD0006B569 /* CoreGraphics.framework in Frameworks */,
 				D130064F12F02D9700702C0E /* Cocoa.framework in Frameworks */,
 			);
@@ -148,6 +154,7 @@
 				089C167CFE841241C02AAC07 /* Resources */,
 				089C1671FE841209C02AAC07 /* External Frameworks and Libraries */,
 				189286360695AD8900B05D6E /* Products */,
+				D147F4281F95D79300AB7E31 /* Frameworks */,
 			);
 			name = ZINT;
 			sourceTree = "<group>";
@@ -155,8 +162,6 @@
 		089C1671FE841209C02AAC07 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				D1618A331F39DB35002EFE36 /* libzint.dylib */,
-				D1618A351F39DBD4002EFE36 /* libpng16.16.dylib */,
 				D13116C61A03B5B600DE1322 /* AppKit.framework */,
 				D175D9CC1A02E8DD0006B569 /* CoreGraphics.framework */,
 				D130064E12F02D9700702C0E /* Cocoa.framework */,
@@ -259,6 +264,17 @@
 				D13116D71A03BBFC00DE1322 /* ARRAY_TEXT.h */,
 			);
 			name = ARRAY;
+			sourceTree = "<group>";
+		};
+		D147F4281F95D79300AB7E31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D147F4291F95D79300AB7E31 /* libjpeg.a */,
+				D147F42A1F95D79300AB7E31 /* libpng16.a */,
+				D147F42B1F95D79300AB7E31 /* libz.a */,
+				D147F42C1F95D79300AB7E31 /* libzint.2.4.2.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D19CC171135378140004336E /* Classes */ = {
@@ -420,7 +436,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "Developer ID Application: keisuke miyako (Y69CWUC25B)";
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUGGING_SYMBOLS = YES;
@@ -433,6 +450,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "4D Plugin_Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
@@ -466,7 +484,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "Developer ID Application: keisuke miyako (Y69CWUC25B)";
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEPLOYMENT_LOCATION = NO;
@@ -476,6 +495,7 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "4D Plugin_Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;
@@ -509,7 +529,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "Developer ID Application: keisuke miyako (Y69CWUC25B)";
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_LOCATION = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -517,6 +538,7 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "4D Plugin_Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
 				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
 				GCC_WARN_UNKNOWN_PRAGMAS = NO;

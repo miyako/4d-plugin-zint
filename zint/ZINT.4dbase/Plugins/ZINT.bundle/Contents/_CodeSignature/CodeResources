@@ -94,7 +94,7 @@
 		</data>
 		<key>Resources/Documentation/index.html</key>
 		<data>
-		fR+T2QjXFGAPPK7+/FUA0KCqGIw=
+		tutUGe734nUlNrdUqhFffB5/55I=
 		</data>
 		<key>Resources/Documentation/styles/common.css</key>
 		<data>
@@ -120,24 +120,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>MacOS/libpng16.16.dylib</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			rH6woTg2N5o7fqXWvpzr+GMeIrA=
-			</data>
-			<key>requirement</key>
-			<string>identifier libpng16 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
-		</dict>
-		<key>MacOS/libzint.dylib</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			3pytAe/V76HjX8fVFBZS9eNhvBc=
-			</data>
-			<key>requirement</key>
-			<string>identifier libzint and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
-		</dict>
 		<key>QuickLook/Thumbnail.png</key>
 		<dict>
 			<key>hash</key>
@@ -395,11 +377,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fR+T2QjXFGAPPK7+/FUA0KCqGIw=
+			tutUGe734nUlNrdUqhFffB5/55I=
 			</data>
 			<key>hash2</key>
 			<data>
-			0fX86lRAe3m166lELc7jBYVkrzjif47MCd/bYMlJmX0=
+			j+Byi+FxWizgEv6bjHfgnULzeCry/I9pE19ONa9CE8w=
 			</data>
 		</dict>
 		<key>Resources/Documentation/styles/common.css</key>
@@ -452,22 +434,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ikS4twIFWKsK6f9c9Etb6NpJR3Q=
+			eQ1RPzCxNXV8bogiAShwu0BEW6g=
 			</data>
 			<key>hash2</key>
 			<data>
-			oQvxtQOoDYdI/17h4fSea5+Bh/qFWOwYr7b6M1V7TpI=
+			I6RHH+h8H4mhn9F9yiF4dLC+pEdFnaykIsn+c+5xaxE=
 			</data>
 		</dict>
 		<key>Windows64/ZINT.4DX</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			4S8rm5rDrgdH0+YNx4Gn90rMBJ4=
+			MbbBut691w6u+0Cl7sGsUodHCXs=
 			</data>
 			<key>hash2</key>
 			<data>
-			SRqAGkrXF+4kWcJT8OOTDxE9ZPOB4w2oxPLDkkzE98w=
+			37jx9kjep6t4Be/SXSABWFonHH47/6GrXRZNIlTvd6Y=
 			</data>
 		</dict>
 		<key>manifest.json</key>

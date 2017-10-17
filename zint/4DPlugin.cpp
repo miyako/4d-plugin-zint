@@ -705,10 +705,14 @@ void toPNG(zint_symbol *symbol, int dpi, int rotate_angle, bool no_background, C
 				} else {
 					latch = 0;
 				}
-				
+				::std::size_t outpos = 0;
 				do {
 					block_width = 0;
-					PA_YieldAbsolute();
+					//breathe every 8KO
+					if((outpos % 0x2000)==0) {
+						PA_YieldAbsolute();
+					}
+					outpos++;
 					do {
 						block_width++;
 					} while (zint::module_is_set(symbol, this_row, i + block_width) == zint::module_is_set(symbol, this_row, i));
@@ -1638,10 +1642,14 @@ void toSVG(zint_symbol *symbol, int dpi, int rotate_angle, bool no_background, C
 			} else {
 				latch = 0;
 			}
-			
+			::std::size_t outpos = 0;
 			do {
 				block_width = 0;
-				PA_YieldAbsolute();
+				//breathe every 8KO
+				if((outpos % 0x2000)==0) {
+					PA_YieldAbsolute();
+				}
+				outpos++;
 				do {
 					block_width++;
 				} while (zint::module_is_set(symbol, this_row, i + block_width) == zint::module_is_set(symbol, this_row, i));

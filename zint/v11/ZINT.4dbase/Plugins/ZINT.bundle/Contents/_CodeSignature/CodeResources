@@ -124,24 +124,6 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>MacOS/libpng16.16.dylib</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			eg8c9C4PVn7mssRtV5XrJsP1FjM=
-			</data>
-			<key>requirement</key>
-			<string>identifier libpng16 and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
-		</dict>
-		<key>MacOS/libzint.dylib</key>
-		<dict>
-			<key>cdhash</key>
-			<data>
-			0fUbpbV32M54mffD28ubFuB5xpY=
-			</data>
-			<key>requirement</key>
-			<string>identifier libzint and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Y69CWUC25B</string>
-		</dict>
 		<key>QuickLook/Thumbnail.png</key>
 		<dict>
 			<key>hash</key>
