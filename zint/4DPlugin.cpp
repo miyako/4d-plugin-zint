@@ -226,13 +226,27 @@ void ZINT(sLONG_PTR *pResult, PackagePtr pParams)
 		std::vector<char> buf(dataSize);
 		
 		
-		int n = PA_ConvertCharsetToCharset((char *)inData.getUTF16StringPtr(),
-																		 inData.getUTF16Length() * sizeof(PA_Unichar),
-																		 eVTC_UTF_16,
-																		 (char *)&buf[0],
-																		 dataSize,
-																		 eVTC_UTF_8);
-		
+        int n = 0;
+        
+        if(sym->input_mode == SJIS_MODE) {
+            
+            n = PA_ConvertCharsetToCharset((char *)inData.getUTF16StringPtr(),
+                                                                             inData.getUTF16Length() * sizeof(PA_Unichar),
+                                                                             eVTC_UTF_16,
+                                                                             (char *)&buf[0],
+                                                                             dataSize,
+                                                                         eVTC_SHIFT_JIS);
+            
+        }else{
+            
+            n = PA_ConvertCharsetToCharset((char *)inData.getUTF16StringPtr(),
+                                                                             inData.getUTF16Length() * sizeof(PA_Unichar),
+                                                                             eVTC_UTF_16,
+                                                                             (char *)&buf[0],
+                                                                             dataSize,
+                                                                             eVTC_UTF_8);
+        }
+
 		unsigned char *s = (unsigned char *)&buf[0];
 		
 		if(!ZBarcode_Encode(sym, s, n))
