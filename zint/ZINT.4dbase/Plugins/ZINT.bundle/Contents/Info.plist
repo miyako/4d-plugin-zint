@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>19B88</string>
+	<string>19D76</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -21,7 +21,7 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.2</string>
+	<string>2.3</string>
 	<key>CSResourcesFileMapped</key>
 	<true/>
 	<key>DTCompiler</key>
@@ -39,6 +39,6 @@
 	<key>DTXcodeBuild</key>
 	<string>11C504</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.9</string>
+	<string>10.11</string>
 </dict>
 </plist>
