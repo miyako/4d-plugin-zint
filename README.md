@@ -3,6 +3,8 @@ Barcode generator based on [zint](https://zint.github.io).
 
 * Exports SVG or PNG (compressed bitmap), as picture and text (XML source or base64 encoded data).
 
+![obsolete-word-black-frame-word-obsolete-word-black-frame-d-rendering-123942590](https://user-images.githubusercontent.com/1725068/78463940-29122280-771e-11ea-8be8-a7830725403e.jpg)
+
 **Note:** The original PNG routine is only kept for the sake of completeness. The graphic quality is significantly better if 4D (``CONVERT PICTURE``, ``WRITE PICTURE FILE``) is used to convert SVG to PNG.
 
 ### Platform
